@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/books" method="post">
+    <div>
+        <label 
+        for="title">Title:
+        </label>
+        <input type="text" id="title" name="title"
+        placeholder="Title">
+    </div>
+    <div>
+        <label 
+        for="author">Author:
+        </label>
+        {% for author is authors %}
+        <input type="text" id="{{book.author.name}}" name="{{book.author.name}}"
+        placeholder="Author">
+        {% endfor %}
+    </div>
+    <button type="submit">Add Book
+    </button>
+
+</form>
+
+{% endblock %}

@@ -16,7 +16,7 @@ In your application you should be able to perform the following actions:
 * Be able to create a new Book
 * View a single Book
 
-## Advanced Extensions
+## Advanced Extensions 
 
 * Edit a Book
 * Style the app using CSS
